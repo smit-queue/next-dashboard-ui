@@ -25,6 +25,7 @@ export default function DashbordLayout({
       bg-[#F7F8FA] overflow-scroll">
         <Navbar/>
         <Homepage/>
+        {children}
       </div>
     </div>
   );
