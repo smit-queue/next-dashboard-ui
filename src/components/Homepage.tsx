@@ -14,12 +14,16 @@ const Homepage = () => {
   };
 
   return (
-    <div className='flex flex-col mt-6 items-center h-screen'>
+    <div className='flex flex-col mt-6   h-screen'>
+      <div className='flex flex-col items-center'>
       <h1 className='text-3xl font-bold'>Welcome to SchoolSky</h1>
       <p className='text-sm mt-2'>SchoolSky is a school management system that allows you to manage your school in a better way.</p>
-      <div className='flex flex-col mt-4'>
+      </div>
+
+      <div className='flex flex-col ml-[85px] mt-[85px]'>
         <h2 className='text-2xl font-semibold mb-4'>Login with:</h2>
-        <div className='flex flex-row space-x-4'>
+
+        <div className='flex flex-row'>
           <button className='bg-lamaPurpleLight text-black font-bold py-2 px-4 rounded hover:bg-yellow-300 transition duration-200'>
             Admin
           </button>
@@ -30,8 +34,9 @@ const Homepage = () => {
             Student
           </button>
         </div>
+
       </div>
-      <div className='mt-6'>
+      <div className='m-[85px]'>
         <input 
           type='text' 
           value={query} 
